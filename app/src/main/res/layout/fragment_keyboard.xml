@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintKeyboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button21"
+        style="@style/KeyboardButton.Number"
+        android:text="@string/key_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button16" />
+
+    <Button
+        android:id="@+id/button24"
+        style="@style/KeyboardButton"
+        android:text="@string/key_plus"
+        app:layout_constraintBottom_toBottomOf="@+id/button21"
+        app:layout_constraintEnd_toStartOf="@+id/button25"
+        app:layout_constraintStart_toEndOf="@+id/button23"
+        app:layout_constraintTop_toTopOf="@+id/button21" />
+
+    <Button
+        android:id="@+id/button25"
+        style="@style/KeyboardButton"
+        android:text="@string/key_equal"
+        app:layout_constraintBottom_toBottomOf="@+id/button21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button24"
+        app:layout_constraintTop_toTopOf="@+id/button21" />
+
+    <Button
+        android:id="@+id/button22"
+        style="@style/KeyboardButton.Number"
+        android:text="@string/key_dot"
+        app:layout_constraintBottom_toBottomOf="@+id/button21"
+        app:layout_constraintEnd_toStartOf="@+id/button23"
+        app:layout_constraintStart_toEndOf="@+id/button21"
+        app:layout_constraintTop_toTopOf="@+id/button21" />
+
+    <Button
+        android:id="@+id/button23"
+        style="@style/KeyboardButton"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/button21"
+        app:layout_constraintEnd_toStartOf="@+id/button24"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button22"
+        app:layout_constraintTop_toTopOf="@+id/button21" />
+
+    <Button
+        android:id="@+id/button16"
+        style="@style/KeyboardButton.Number"
+        android:text="@string/key_1"
+        app:layout_constraintBottom_toTopOf="@+id/button21"
+        app:layout_constraintEnd_toStartOf="@+id/button17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+    <Button
+        android:id="@+id/button18"
+        style="@style/KeyboardButton.Number"
+        android:text="@string/key_3"
+        app:layout_constraintBottom_toBottomOf="@+id/button16"
+        app:layout_constraintEnd_toStartOf="@+id/button19"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button17"
+        app:layout_constraintTop_toTopOf="@+id/button16" />
+
+    <Button
+        android:id="@+id/button19"
+        style="@style/KeyboardButton"
+        android:text="@string/key_minus"
+        app:layout_constraintBottom_toBottomOf="@+id/button16"
+        app:layout_constraintEnd_toStartOf="@+id/button20"
+        app:layout_constraintStart_toEndOf="@+id/button18"
+        app:layout_constraintTop_toTopOf="@+id/button16" />
+
+    <Button
+        android:id="@+id/button20"
+        style="@style/KeyboardButton"
+        android:text="@string/bracket_r"
+        app:layout_constraintBottom_toBottomOf="@+id/button16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button19"
+        app:layout_constraintTop_toTopOf="@+id/button16" />
+
+    <Button
+        android:id="@+id/button17"
+        style="@style/KeyboardButton.Number"
+        android:text="@string/key_2"
+        app:layout_constraintBottom_toBottomOf="@+id/button16"
+        app:layout_constraintEnd_toStartOf="@+id/button18"
+        app:layout_constraintStart_toEndOf="@+id/button16"
+        app:layout_constraintTop_toTopOf="@+id/button16" />
+
+    <Button
+        android:id="@+id/button11"
+        style="@style/KeyboardButton.Number"
+        android:text="@string/key_4"
+        app:layout_constraintBottom_toTopOf="@+id/button16"
+        app:layout_constraintEnd_toStartOf="@+id/button12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button13"
+        style="@style/KeyboardButton.Number"
+        android:text="@string/key_6"
+        app:layout_constraintBottom_toBottomOf="@+id/button11"
+        app:layout_constraintEnd_toStartOf="@+id/button14"
+        app:layout_constraintStart_toEndOf="@+id/button12"
+        app:layout_constraintTop_toTopOf="@+id/button11" />
+
+    <Button
+        android:id="@+id/button14"
+        style="@style/KeyboardButton"
+        android:text="@string/key_multiplied"
+        app:layout_constraintBottom_toBottomOf="@+id/button11"
+        app:layout_constraintEnd_toStartOf="@+id/button15"
+        app:layout_constraintStart_toEndOf="@+id/button13"
+        app:layout_constraintTop_toTopOf="@+id/button11" />
+
+    <Button
+        android:id="@+id/button15"
+        style="@style/KeyboardButton"
+        android:text="@string/bracket_l"
+        app:layout_constraintBottom_toBottomOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button14"
+        app:layout_constraintTop_toTopOf="@+id/button11" />
+
+    <Button
+        android:id="@+id/button12"
+        style="@style/KeyboardButton.Number"
+        android:text="@string/key_5"
+        app:layout_constraintBottom_toBottomOf="@+id/button11"
+        app:layout_constraintEnd_toStartOf="@+id/button13"
+        app:layout_constraintStart_toEndOf="@+id/button11"
+        app:layout_constraintTop_toTopOf="@+id/button11" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/KeyboardButton.Number"
+        android:text="@string/key_7"
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/KeyboardButton.Number"
+        android:text="@string/key_8"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/KeyboardButton.Number"
+        android:text="@string/key_9"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/KeyboardButton"
+        android:text="@string/key_divided"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/btnBackspace"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <Button
+        android:id="@+id/btnBackspace"
+        style="@style/KeyboardButton"
+        android:text="@string/key_backspace"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_result">
+
+    <EditText
+        android:id="@+id/edtInput"
+        style="@style/CustomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:hint="@string/key_0"
+        android:importantForAutofill="no"
+        android:textSize="@dimen/text_size_input" />
+
+    <EditText
+        android:id="@+id/edtResult"
+        style="@style/CustomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:hint="@string/key_0"
+        android:importantForAutofill="no"
+        android:textSize="@dimen/text_size_result" />
+</LinearLayout>
