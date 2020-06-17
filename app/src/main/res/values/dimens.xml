@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_result">200dp</dimen>
+    <dimen name="margin_key">5dp</dimen>
+    <dimen name="padding_result">16dp</dimen>
+    <dimen name="text_size_key">36dp</dimen>
+    <dimen name="text_size_result">36sp</dimen>
+    <dimen name="text_size_input">42sp</dimen>
+</resources>
