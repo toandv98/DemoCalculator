@@ -10,7 +10,6 @@ import kotlinx.android.synthetic.main.fragment_result.*
 import org.mariuszgromada.math.mxparser.Expression
 import java.math.MathContext
 
-
 class ResultFragment : Fragment(), FragmentResultListener {
 
     private var input = ""
@@ -38,34 +37,41 @@ class ResultFragment : Fragment(), FragmentResultListener {
     override fun onFragmentResult(requestKey: String, result: Bundle) {
 
         when (val key = result.getCharSequence(BUNDLE_INPUT)) {
+            getString(R.string.key_equal) -> {
+
+                val str = edtResult.text.toString()
+                val err = getString(R.string.err_expression_invalid)
+
+                if (str.isBlank() || str == err) {
+                    edtResult.setText(err)
+                    return
+                }
+            }
             getString(R.string.key_backspace) -> input = input.dropLast(1)
-            getString(R.string.key_equal) -> calculator()
             else -> input = input.plus(key)
         }
 
-        display()
-    }
-
-    private fun display() {
-        input = input.replace("([+×÷-])\\1+".toRegex(), "$1")
+        calculator()
         edtInput.setText(input)
         edtInput.setSelection(input.length)
     }
 
     private fun calculator() {
 
+        input = input.replace("([+×÷-])\\1+".toRegex(), "$1")
+
         val expression = Expression(
-            input
-                .replace(getString(R.string.key_multiplied), "*")
+            input.replace(getString(R.string.key_multiplied), "*")
                 .replace(getString(R.string.key_divided), "/")
+                .replace(getString(R.string.key_square_root), "sqrt")
         )
 
         when {
-            input.isBlank() -> edtResult.setText(R.string.default_result)
+            input.isBlank() -> edtResult.setText(getString(R.string.default_result))
             expression.checkSyntax() -> edtResult.setText(
                 expression.calculate().toBigDecimal(MathContext.DECIMAL64).toPlainString()
             )
-            else -> edtResult.setText(R.string.err_expression_invalid)
+            else -> edtResult.setText("")
         }
     }
 

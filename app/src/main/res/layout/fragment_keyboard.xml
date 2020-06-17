@@ -44,7 +44,7 @@
     <Button
         android:id="@+id/button23"
         style="@style/KeyboardButton"
-        android:visibility="invisible"
+        android:text="@string/key_square_root"
         app:layout_constraintBottom_toBottomOf="@+id/button21"
         app:layout_constraintEnd_toStartOf="@+id/button24"
         app:layout_constraintHorizontal_bias="0.5"
