@@ -1,10 +1,36 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">#2979FF</item>
+        <item name="colorPrimaryDark">#2962FF</item>
+        <item name="colorAccent">#2979FF</item>
+        <item name="android:statusBarColor">@color/colorStatusBar</item>
+    </style>
+
+    <style name="KeyboardButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginStart">@dimen/margin_key</item>
+        <item name="android:layout_marginEnd">@dimen/margin_key</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/text_size_key</item>
+        <item name="rippleColor">?android:attr/colorControlHighlight</item>
+        <item name="android:backgroundTint">@color/colorBackgroundItem</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="KeyboardButton.Number" parent="KeyboardButton">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="CustomEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:background">@android:color/transparent</item>
     </style>
 
 </resources>
